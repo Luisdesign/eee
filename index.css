@@ -1,0 +1,68 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(213, 250, 250);
+  background-size: fill;
+}
+
+.container {
+  flex-grow: 1; /* Permite que o conteúdo preencha o espaço disponível */
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(7, 1fr); /* Cada linha ocupa uma fração igual do espaço disponível */
+  margin: -5% 0; /* Margem negativa para compensar o espaçamento entre as linhas */
+}
+
+div {
+  text-align: center;
+  padding: 3px;
+  background-color: rgb(213, 250, 250);
+  background-size: fill;
+}
+
+.input-container {
+  text-align: center;
+  flex-grow: 1;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 50% 20% 25%; /* Duas colunas: 30% para o label, e o restante para a input */
+  gap: 10px; /* Espaço entre o label e a input */
+}
+
+.input-container2 {
+  text-align: center;
+  flex-grow: 1;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 300px 80px /* Duas colunas: 30% para o label, e o restante para a input */
+}
+
+.input-container3 {
+  text-align: center;
+  flex-grow: 1;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 100% /* Duas colunas: 30% para o label, e o restante para a input */
+}
+
+.input-container label {
+  text-align: right; /* Alinha o texto à direita da coluna */
+}
+
+.material-icon {
+  font-family: 'Material Symbols Rounded';
+  font-weight: normal; /* Pode ser alterado para diferentes pesos de ícones */
+  font-size: 45px; /* Tamanho do ícone */
+}
+
